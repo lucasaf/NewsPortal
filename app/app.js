@@ -1,9 +1,4 @@
-var express = require('express');
-var msg = require('./mod_teste');
-
-var app = express();
-
-app.set('view engine', 'ejs');
+var app = require('./config/server');
 
 app.get('/', function(req, res){
     res.render("home/index")
@@ -14,7 +9,7 @@ app.get('/formulario_inclusao_noticia', function(req, res){
 });
 
 app.get('/news', function(req, res){
-    res.render("noticias/news");
+    res.render("news/news");
 });
 
 app.listen(3000, function(){
