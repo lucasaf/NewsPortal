@@ -10,11 +10,11 @@ app.get('/', function(req, res){
 });
 
 app.get('/formulario_inclusao_noticia', function(req, res){
-    res.render("admin/form_add_noticia");
+    res.render("admin/form_add_new");
 });
 
-app.get('/noticias', function(req, res){
-    res.render("noticias/noticias");
+app.get('/news', function(req, res){
+    res.render("noticias/news");
 });
 
 app.listen(3000, function(){
